@@ -1,7 +1,7 @@
 import axios from "axios"; 
 
-const api = axios.create({baseURL: "https://swapi.co/api/people"});
-//https://swapi.co/api/
+const api = axios.create({baseURL: "https://swapi.co/api/"});
+//base url
 /*
 api.interceptors.request.use(async config => {
   const token = getToken();
