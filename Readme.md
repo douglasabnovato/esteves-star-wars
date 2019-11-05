@@ -13,7 +13,7 @@
 ![Yarn](/images/logo-yarn.png)
 ![Nodejs](/images/logo-nodejs.png)
 
-### Projet `Star Wars`
+### Projeto Frontend `Star Wars`
 - Projeto frontend.
 
 De `@douglasabnovato`.
