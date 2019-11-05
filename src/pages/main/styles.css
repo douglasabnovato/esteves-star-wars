@@ -10,3 +10,31 @@
     padding: 20px;
     margin-bottom: 20px;
 }
+
+.people-list article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.people-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border:2px solid#ffff00;
+    background: none;
+    margin-top: 10px;
+    color: #ffff00;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.people-list article a:hover{
+    background: #ffff00;
+    color:#000000;
+}
