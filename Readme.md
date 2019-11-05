@@ -1,4 +1,7 @@
 # Frontend Star Wars
+#### Atualização: 05 de novembro de 2019 - 15:55
+#### Criação: 05 de novembro de 2019
+#### Prática : @douglasabnovato
 
 ## Tecnologias : 
 
@@ -13,8 +16,5 @@
 #### Projet `Star Wars`
 - Projeto frontend.
 
+De `@douglasabnovato`.
 
-
-#### Atualização: 05 de novembro de 2019 - 15:55
-#### Criação: 05 de novembro de 2019
-#### Prática : @douglasabnovato
