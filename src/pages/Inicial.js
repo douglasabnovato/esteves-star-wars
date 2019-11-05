@@ -17,7 +17,7 @@ class Inicial extends Component {
     
     return (
       <div>
-        <p>a</p>
+        <p>@douglasabnovato</p>
       </div>
     );
   }
