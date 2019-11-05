@@ -2,17 +2,17 @@
 import React, { Component } from 'react'; 
 import { Link, withRouter } from "react-router-dom"; 
  
- 
 class Inicial extends Component {
+  
   constructor() {
     super();
     this.state = {}; 
   }
 
-  
   componentDidMount(){
     
   }
+
   render() {
     
     return (
@@ -22,4 +22,5 @@ class Inicial extends Component {
     );
   }
 }
+
 export default withRouter(Inicial);
