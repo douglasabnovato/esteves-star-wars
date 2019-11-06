@@ -24,7 +24,7 @@
     border:2px solid#ffff00;
     background: none;
     margin-top: 10px;
-    color: #ffff00;
+    color: #000000;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -37,4 +37,14 @@
 .people-list article a:hover{
     background: #ffff00;
     color:#000000;
+}
+
+.people-list .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.people-list .actions button{
+    
 }
