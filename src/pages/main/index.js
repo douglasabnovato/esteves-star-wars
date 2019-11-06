@@ -54,23 +54,23 @@ class Main extends Component {
                 <article>
                     <strong>Name 1</strong>
                     <p>Film</p>
-                    <a href="">Saiba Mais</a>
+                    <a href="/product/1">Saiba Mais</a>
                 </article>
 
                 <article>
                     <strong>Name 2</strong>
                     <p>Film</p>
-                    <a href="">Saiba Mais</a>
+                    <a href="/product/1">Saiba Mais</a>
                 </article>
                 <article>
                     <strong>Name 3</strong>
                     <p>Film</p>
-                    <a href="">Saiba Mais</a>
+                    <a href="/product/1">Saiba Mais</a>
                 </article>
                 <article>
                     <strong>Name 4</strong>
                     <p>Film</p>
-                    <a href="">Saiba Mais</a>
+                    <a href="/product/1">Saiba Mais</a>
                 </article>
                 <article>
                     <strong>Name 5</strong>
