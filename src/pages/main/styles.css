@@ -22,7 +22,7 @@
     height: 42px;
     border-radius: 5px;
     border:2px solid#ffff00;
-    background: #ffff00;
+    background: none;
     margin-top: 10px;
     color: #000000;
     font-weight: bold;
@@ -36,6 +36,7 @@
 
 .people-list article a:hover{
     opacity: 0.5; 
+    background: #ffff00;
 }
 
 .people-list .actions{
