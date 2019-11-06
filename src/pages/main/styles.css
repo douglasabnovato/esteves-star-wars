@@ -1,9 +1,9 @@
-.people-list{
+.product-list{
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
 }
-.people-list article{
+.product-list article{
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -11,14 +11,14 @@
     margin-bottom: 20px;
 }
 
-.people-list article p {
+.product-list article p {
     font-size: 16px;
     color: #999;
     margin-top: 5px;
     line-height: 24px;
 }
 
-.people-list article a{
+.product-list article a{
     height: 42px;
     border-radius: 5px;
     border:2px solid#ffff00;
@@ -34,18 +34,18 @@
     transition: all 0.2s;
 }
 
-.people-list article a:hover{
+.product-list article a:hover{
     opacity: 0.5; 
     background: #ffff00;
 }
 
-.people-list .actions{
+.product-list .actions{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.people-list .actions button{
+.product-list .actions button{
     padding: 10px;
     border-radius: 5px;
     border: 0;
@@ -56,6 +56,11 @@
     cursor: pointer;
 }
 
-.people-list .actions button:hover{
+.product-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.product-list .actions button:hover{
     opacity: 0.7;
 }

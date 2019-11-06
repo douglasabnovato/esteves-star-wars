@@ -5,34 +5,51 @@ import './styles.css'
 class Main extends Component {
 
     state = {
-        peoples:[],
-    }
+        products: [],
+        productInfo: {},
+        page: 1
+    };
 
     componentDidMount(){
-        this.loadPeople();
+        this.loadProducts();
     }//Function
 
-    loadPeople = async () => {
-        const response = await api.get('/people');
+    loadProducts = async (page = 1) => {
+        const response = await api.get(`/products?page=${page}`);
 
-        this.setState({peoples: response.data.results});
+        const { results, ...productInfo} = response.data;
+
+        this.setState({ products: results, productInfo, page });
     };//arrowFunction 
 
+    prevPage = () => {
+        const { page, productInfo } = this.state;
+        if( page === 1) return;
+        const pageNumber = page - 1;
+        this.loadProducts(pageNumber);
+    }
+
+    nextPage = () => {
+        const { page, productInfo } = this.state;
+        if( page === productInfo.pages) return;
+        const pageNumber = page + 1;
+        this.loadProducts(pageNumber);
+    };
 
     render() {/*count next previous results ::: name height mass hair_color skin_color eye_color birth_year gender homeworld films species vehicles starships created edited url*/
-        const { peoples } = this.state;
+        const { products, page, productInfo } = this.state;
         
         return (
-            <div className="people-list">
+            <div className="product-list">
             {/*
-                {peoples.map(people => (//"_id" identificador de cada personagem
-                    <article key={people._id}>
-                        <strong>{people.name}</strong>
-                        <p>{people.films}</p>
+                {products.map(product => (//"_id" identificador de cada personagem
+                    <article key={product._id}>
+                        <strong>{product.name}</strong>
+                        <p>{product.films}</p>
                         <a href="">Saiba Mais</a>
                     </article>
                 ))}
-            */}
+             */}
                 <article>
                     <strong>Name 1</strong>
                     <p>Film</p>
@@ -84,9 +101,10 @@ class Main extends Component {
                     <p>Film</p>
                     <a href="">Saiba Mais</a>
                 </article>
+            
                 <div className="actions">
-                    <button>Anterior</button>
-                    <button>Próxima</button>
+                    <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
+                    <button disabled={page === productInfo.pages} onClick={this.nextPage}>Próxima</button>
                 </div>
             </div>
         );
