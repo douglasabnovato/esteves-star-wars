@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";  
-import Inicial from "./pages/Inicial";
+import { BrowserRouter, Route, Switch } from "react-router-dom";  
+import Main from "./pages/main";
+import Products from "./pages/product";
  
 const Routes = () => (
   <BrowserRouter>
     <Switch> 
-      <Route path={"/"} component={ Inicial } />
+      <Route exact path={"/"} component={ Main } />
+      <Route path={"/products/:id"} component={ Products } />
     </Switch>
   </BrowserRouter>
 );
