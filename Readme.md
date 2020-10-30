@@ -1,3 +1,78 @@
+### Descrição do Projeto
+
+Uma aplicação em reactjs que exibe informações de STAR WARS e para isso, utilize a **API Swapi** para efetuar as buscas necessárias.
+
+tarefa 1: Liste todos os planetas, exibindo o nome do planeta e a população em uma lista.
+
+tarefa 2: Ao selecionar o planeja, exiba as seguintes informações: nome, clima, terra, população e liste os residentes, com o nome e massa.
+
+### Detalhes do desenvolvimento do Projeto
+
+#### 1. configuração de ambiente
+
+- [x] 1.1. node 12.18.3
+- [x] 1.2. npm 6.14.6
+- [x] 1.3. yarn 1.21.1
+- [x] 1.4. npm install -g create-react-app : transpilação configurada
+- [x] 1.5. create-react-app star-wars-rbm : criar o projeto
+- [x] 1.6. `npm start`: iniciar a aplicação
+
+#### 2. componentes
+
+- [x] 2.1. Component Header
+- [x] 2.2. Estilização do Header
+- [x] 2.3. Estilização global
+
+#### 3. API Swapi
+
+- [x] 3.1. Acessar um serviço externo a aplicação através de uma biblioteca axios: `yarn add axios`
+- [x] 3.2. services/api.js: configuração da conexão para buscar os dados da api
+- [x] 3.3. chamada a API swapi.dev
+- [x] 3.3.1. componentDidMount
+- [x] 3.3.2. promises
+- [x] 3.3.3. async await
+
+#### 4. Armazenando no state
+
+- [x] 4.1. state planets
+
+#### 5. Listando os planetas
+
+- [x] 5.1. Buscar as informações Nome do Planeta e População
+- [x] 5.2. Estilização do card com todos os planetas
+
+#### 6. Paginação dos itens vindo da API
+
+- [x] 6.1. Estilização dos botões de paginação
+- [x] 6.2.1. Armazenar as informações da api nos estados
+- [x] 6.2.2. Método prevPage para o botão anterior
+- [x] 6.2.3. Método nextPage para o botão próximo  
+
+#### 7. Configurar a navegação das páginas com rotas
+
+- [x] 7.1. biblioteca de rotas: `yarn add react-router-dom`
+- [x] 7.2. arquivos para as rotas: `routes.js`
+- [x] 7.3. configuração das rotas
+
+#### 8. Navegando nos planetas e abrindo detalhes
+
+- [x] 8.1. Buscar na api os detalhes do planeta
+- [x] 8.1.1. state
+- [x] 8.1.2. componentDidMount 
+- [x] 8.2. Exibir em tela
+- [x] 8.3. Estilização do card de detalhes
+
+#### 9. Formatação para a RBM Web
+
+- [x] 9.1. Cores: Tons de azul, Branco, Preto
+- [x] 9.2. Documentação do projeto
+
+#### 10. Warning
+
+- [x] 10.1. List and key
+
+.: Por [Douglas A B Novato - @douglasabnovato](https://linktr.ee/douglasabnovato)<br/>
+. De [RBM Web](https://site.rbmweb.com.br/)
 # Frontend Star Wars
 #### Atualização: 11 de janeiro de 2020 - 19:39
 #### Criação: 05 de novembro de 2019
